@@ -1,11 +1,7 @@
-%define name perl-Net-Arping
-%define version 0.02
-%define release 3mdk
-
 Summary:	Net-Arping module for perl 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		perl-Net-Arping
+Version:	0.02
+Release:	%mkrel 4
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://www.cpan.org
@@ -46,4 +42,3 @@ rm -rf %{buildroot}
 %doc Changes README
 %{perl_vendorarch}/*
 %{_mandir}/*/*
-
