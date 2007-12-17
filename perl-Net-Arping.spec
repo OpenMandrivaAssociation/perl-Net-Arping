@@ -9,7 +9,6 @@ Source0:	Net-Arping-%{version}.tar.bz2
 BuildRequires:	libnet1.0.2-devel
 BuildRequires:	libpcap-devel
 BuildRequires:	perl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 The module contains function for testing remote host reachability
