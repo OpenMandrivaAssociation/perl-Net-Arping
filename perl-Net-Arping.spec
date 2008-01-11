@@ -1,11 +1,12 @@
 Summary:	Net-Arping module for perl 
 Name:		perl-Net-Arping
 Version:	0.02
-Release:	%mkrel 4
+Release:	%mkrel 5
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://www.cpan.org
 Source0:	Net-Arping-%{version}.tar.bz2
+Patch0:		perl-Net-Arping-0.02-overflow.patch
 BuildRequires:	libnet1.0.2-devel
 BuildRequires:	libpcap-devel
 BuildRequires:	perl-devel
@@ -19,6 +20,7 @@ setuid.
 %prep
 
 %setup -q -n Net-Arping-%{version} 
+%patch0 -p0
 
 %build
 
