@@ -1,7 +1,7 @@
 Summary:	Net-Arping module for perl 
 Name:		perl-Net-Arping
 Version:	0.02
-Release:	%mkrel 5
+Release:	%mkrel 6
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://www.cpan.org
