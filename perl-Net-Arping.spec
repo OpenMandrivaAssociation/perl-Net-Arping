@@ -13,7 +13,7 @@ Source0:    http://www.cpan.org/modules/by-module/Net/%{upstream_name}-%{upstrea
 Patch0:		perl-Net-Arping-0.02-overflow.patch
 
 BuildRequires:	libnet1.0.2-devel
-BuildRequires:	libpcap-devel
+BuildRequires:	pcap-devel = 1.3.0-2
 BuildRequires:	perl-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
