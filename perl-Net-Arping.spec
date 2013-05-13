@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:	2
+Release:	3
 
 Summary:	Net-Arping module for perl 
 License:	GPL+ or Artistic
@@ -15,7 +15,6 @@ Patch0:		perl-Net-Arping-0.02-overflow.patch
 BuildRequires:	libnet1.0.2-devel
 BuildRequires:	pcap-devel = 1.3.0-2
 BuildRequires:	perl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 The module contains function for testing remote host reachability
