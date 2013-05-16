@@ -12,7 +12,7 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.bz2
 Patch0:		perl-Net-Arping-0.02-overflow.patch
 
-BuildRequires:	libnet1.0.2-devel
+BuildRequires:	net1.0.2-devel = 1.0.2a-17
 BuildRequires:	pcap-devel = 1.3.0-2
 BuildRequires:	perl-devel
 
