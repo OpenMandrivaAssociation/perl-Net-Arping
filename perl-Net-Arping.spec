@@ -2,14 +2,14 @@
 %define upstream_version 0.02
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	6
+Version:    %{upstream_version}
+Release:	7
 
 Summary:	Net-Arping module for perl 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://metacpan.org/dist/Net-Arping
+Source0:    https://cpan.metacpan.org/authors/id/R/RI/RIIKI/Net-Arping-%{upstream_version}.tar.gz
 Patch0:		perl-Net-Arping-0.02-overflow.patch
 
 BuildRequires:	make
