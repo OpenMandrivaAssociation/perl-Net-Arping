@@ -1,15 +1,13 @@
 %define upstream_name    Net-Arping
-%define upstream_version 0.02
-
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:	7
+Version:    0.02
+Release:	8
 
 Summary:	Net-Arping module for perl 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Net-Arping
-Source0:    https://cpan.metacpan.org/authors/id/R/RI/RIIKI/Net-Arping-%{upstream_version}.tar.gz
+Source0:    https://cpan.metacpan.org/authors/id/R/RI/RIIKI/Net-Arping-%{version}.tar.gz
 Patch0:		perl-Net-Arping-0.02-overflow.patch
 
 BuildRequires:	make
@@ -23,7 +21,7 @@ by sending ARP packets. The program must be run as root or be
 setuid.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version} 
+%setup -q -n %{upstream_name}-%{version} 
 %patch0 -p0
 
 %build
@@ -53,9 +51,7 @@ rm -rf %{buildroot}
 
 * Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 0.20.0-1mdv2010.0
 + Revision: 404050
-- rebuild using %%perl_convert_version
-
-* Wed Oct 29 2008 Oden Eriksson <oeriksson@mandriva.com> 0.02-10mdv2009.1
+- rebuild using %0.02 Wed Oct 29 2008 Oden Eriksson <oeriksson@mandriva.com> 0.02-10mdv2009.1
 + Revision: 298347
 - rebuilt against libpcap-1.0.0
 
